@@ -41,6 +41,7 @@
 .bold{
     font-weight: 800;
 }
+
 .dark-text{
     color: var(--Gray-950);
 }
@@ -48,10 +49,10 @@
     color: var(--Gray-500);
 }
 .text-xs{
-    font-size: 13px;
+    font-size: 16px;
 }
 .text-med{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 body{
@@ -63,22 +64,46 @@ main{
 }
 
 .container{
-    padding: 15px;
+    padding: 24px;
     background-color: var(--White);
-    width: 300px;
+    width: 380px;
     box-shadow: 7px 7px 0px;
+    border: 1px solid var(--Gray-950);
+    cursor: pointer;
 }
 .yellow-padded{
     background-color: var(--Yellow);
-    padding: 10px 15px;
+    padding: 5px 10px;
     max-width: max-content;
 }
 .avatar-image{
     width: 30px;
+    margin-right: 10px;
 }
 .container, .avatar-image, .illustration-image{
     border-radius: 12px;
 }
 .yellow-padded{
     border-radius: 5px;
+}
+
+h3:hover{
+    color: var(--Yellow);
+}
+
+@media only screen and (max-width: 600px) {
+    .text-xs{
+        font-size: 13px;
+    }
+    .text-med{
+        font-size: 20px;
+    }
+    .container{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 290px){
+    .container{
+        width: 90%;
+    }
 }
