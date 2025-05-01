@@ -33,7 +33,7 @@
     flex-direction: row;
 }
 .flex.gap-min{
-    gap: 0.5rem;
+    gap: 20px;
 }
 .semibold{
     font-weight: 500;
